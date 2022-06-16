@@ -10,7 +10,7 @@ refs.submit.addEventListener('click', startCreatePromise)
 function startCreatePromise(event) {
   event.preventDefault();
   let delayTotal = parseInt(refs.delay.value);
-  for (let i = 0; i < refs.amount.value; i++) {
+  for (let i = 1; i <= refs.amount.value; i++) {
     createPromise(i, delayTotal)
     delayTotal += parseInt(refs.step.value);
   }
